@@ -6,14 +6,18 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "docker:build": "docker build -t nextjs-app .",
+    "docker:run": "docker run -dp 3000:3000 nextjs-app"
   },
   "dependencies": {
     "@types/node": "20.1.3",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
+    "bootstrap": "^5.2.3",
     "next": "13.4.2",
     "react": "18.2.0",
+    "react-bootstrap": "^2.7.4",
     "react-dom": "18.2.0",
     "typescript": "5.0.4"
   }
